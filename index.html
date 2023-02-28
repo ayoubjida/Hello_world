@@ -1,15 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1> Git Tutorial </h1>
-    <h3> Git Command : file</h3>
-    <p> git clone <i>url</i> </p>
-    <p> git pull </i>
-</body>
+
+<html>
+
+    <head>
+        
+        <title> Home </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.google.com/download?family=Oswald">
+        <link rel="icon" type="image/x-icon" href="football .ico">
+    </head>
+    
+    <body>
+        <nav>
+            <div class="navbar">
+                <h4 class="heading">we're the football </h4>
+            </div>
+            <ul class="nav-links">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a class="active" href="clubs.html">Clubs</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a target="_blanc" class="active" href="login.html"> login</a></li>
+                <li><a target="_blanc" class="signup" href="signup.html"> sign up </a></li>
+            </ul>
+        </nav>
+
+
+
+        <h2 class="art-title">Top 3 barcalona's players </h2>
+        
+        <div class="players">
+            <ol>
+            <li class="name"><b>Lionel Messi</b></li> <br>
+
+            <img class="pl-img" src="https://barcauniversal.com/wp-content/uploads/2019/09/Quotes-on-Messi.jpg" 
+            height="200" width="300" alt="pic that contains lionel messi holding his 6th balon d'or">
+
+            <p class="articl" id="messi">
+                <b>Lionel Andrés Messi</b> (born 24 June 1987 in Rosario) is an Argentine <br>
+                international football player who played for FC Barcelona in the Primera <br>
+                División, and appears on Argentina's national team. Often touted in the media <br>
+                as New Maradona, Messi has been publicly named as his "successor" by Diego <br>
+                Maradona himself.<br><br>
+                
+                He is regarded as the best football player of his generation and one of the best <br>
+                in the history of the sport. Messi received several Ballon d'Or and FIFA World <br>
+            </p>
+
+            <li class="name"><b>Andres iniesta</b></li><br>
+
+            <img class="pl-img" src="https://imgresizer.eurosport.com/unsafe/1200x0/filters:format(webp):focal(1405x211:1407x209)/origin-imgresizer.eurosport.com/2018/05/05/2328077-48460310-2560-1440.jpg" 
+            alt="andres iniesta celibrating after scoring a goal" height="200" width="300">
+
+            <p class="articl" id="iniesta">
+                <b>Andres iniesta</b> (born 11 May 1984 in Fuentealbilla, Albacete) <br>
+                is a Spanish attacking midfielder currently playing for FC Barcelona. <br>
+                He currently plays as a central midfielder for La Liga club FC Barcelona, <br>
+                and the Spanish national team and is a favourite amongst the Barça fans.<br><br>
+
+                At the age of 12, Iniesta was spotted by Barça scouts at his local club Albacete<br>
+                Balompié. He was switftly signed and worked his way up the club ranks. Louis<br>
+                van Gaal handed him his debut on 29 October, 2002, a UEFA Champions League<br>
+            </p>
+
+            <li class="name"><b>Xavier Hernández</b></li><br>
+
+            <img class="pl-img" src="https://imgresizer.eurosport.com/unsafe/1200x0/filters:format(webp):focal(1649x259:1651x257)/origin-imgresizer.eurosport.com/2015/05/23/1572047-33438315-2560-1440.jpg"
+             alt="a pic of Xavier Hernández giving orders to his teammates in barcalona" width="300" height="200">
+
+            <p class="articl" id="xavi">
+                <b>Xavier Hernández</b> (born January 25, 1980, Terrassa, Spain), <br>
+                Spanish football (soccer) player and manager who was widely regarded <br>
+                as one of the best midfielders in the world in the early 21st century.<br><br>
+
+                At age 11 Xavi joined the youth squad of FC Barcelona, <br>
+                a first-division football club near his hometown. He advanced through   <br>
+                the club's various junior ranks before making his first-team debut in 1998.<br>
+                In his first season with the team, Barcelona won the 1998-99 <br>
+                La Liga Spain's top football league championship. Xavi's <br>
+                playing time steadily increased over the following seasons<br>
+            </p>
+            </ol>
+        </div>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        
+        <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+        
+    </body>
+
 </html>
